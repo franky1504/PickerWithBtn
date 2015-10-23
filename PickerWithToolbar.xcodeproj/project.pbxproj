@@ -13,6 +13,7 @@
 		710D16EE1BD8C87F006E7F7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 710D16EC1BD8C87F006E7F7D /* Main.storyboard */; };
 		710D16F01BD8C87F006E7F7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 710D16EF1BD8C87F006E7F7D /* Assets.xcassets */; };
 		710D16F31BD8C87F006E7F7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 710D16F11BD8C87F006E7F7D /* LaunchScreen.storyboard */; };
+		710D16FF1BD8D1BF006E7F7D /* PickerWithBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 710D16FE1BD8D1BF006E7F7D /* PickerWithBtn.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		710D16EF1BD8C87F006E7F7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		710D16F21BD8C87F006E7F7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		710D16F41BD8C87F006E7F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		710D16FD1BD8D1BF006E7F7D /* PickerWithBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerWithBtn.h; sourceTree = "<group>"; };
+		710D16FE1BD8D1BF006E7F7D /* PickerWithBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerWithBtn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +65,11 @@
 				710D16E71BD8C87F006E7F7D /* AppDelegate.m */,
 				710D16E91BD8C87F006E7F7D /* ViewController.h */,
 				710D16EA1BD8C87F006E7F7D /* ViewController.m */,
+				710D16FD1BD8D1BF006E7F7D /* PickerWithBtn.h */,
+				710D16FE1BD8D1BF006E7F7D /* PickerWithBtn.m */,
 				710D16EC1BD8C87F006E7F7D /* Main.storyboard */,
 				710D16EF1BD8C87F006E7F7D /* Assets.xcassets */,
 				710D16F11BD8C87F006E7F7D /* LaunchScreen.storyboard */,
-				710D16F41BD8C87F006E7F7D /* Info.plist */,
 				710D16E31BD8C87F006E7F7D /* Supporting Files */,
 			);
 			path = PickerWithToolbar;
@@ -74,6 +78,7 @@
 		710D16E31BD8C87F006E7F7D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				710D16F41BD8C87F006E7F7D /* Info.plist */,
 				710D16E41BD8C87F006E7F7D /* main.m */,
 			);
 			name = "Supporting Files";
@@ -110,6 +115,7 @@
 				TargetAttributes = {
 					710D16DF1BD8C87F006E7F7D = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = QWQZ9AFEML;
 					};
 				};
 			};
@@ -152,6 +158,7 @@
 				710D16EB1BD8C87F006E7F7D /* ViewController.m in Sources */,
 				710D16E81BD8C87F006E7F7D /* AppDelegate.m in Sources */,
 				710D16E51BD8C87F006E7F7D /* main.m in Sources */,
+				710D16FF1BD8D1BF006E7F7D /* PickerWithBtn.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PickerWithToolbar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fetnet.PickerWithToolbar;
@@ -272,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PickerWithToolbar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fetnet.PickerWithToolbar;

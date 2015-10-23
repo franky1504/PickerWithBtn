@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PickerWithBtn.h"
 
-@interface ViewController : UIViewController
-
-
+@interface ViewController : UIViewController {
+    PickerWithBtn *customPicker;
+    IBOutlet UIView *v;
+    IBOutlet UILabel *label;
+}
+//@property (nonatomic, retain) PickerWithBtn *customPicker;
+//@property (weak, nonatomic) IBOutlet PickerWithBtn *customPicker;
 @end
 

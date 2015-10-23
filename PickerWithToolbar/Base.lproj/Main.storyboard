@@ -1,25 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efY-Og-BpV">
+                                <rect key="frame" x="0.0" y="269" width="320" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="showp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pw1-aB-zAA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBd-7G-Ur4">
+                                <rect key="frame" x="0.0" y="197" width="320" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="efY-Og-BpV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jd0-Y3-Npp"/>
+                            <constraint firstItem="efY-Og-BpV" firstAttribute="top" secondItem="IBd-7G-Ur4" secondAttribute="bottom" constant="51" id="NHA-xb-8c4"/>
+                            <constraint firstItem="IBd-7G-Ur4" firstAttribute="centerX" secondItem="efY-Og-BpV" secondAttribute="centerX" id="bKO-P2-d6b"/>
+                            <constraint firstItem="IBd-7G-Ur4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hu9-0p-mIo"/>
+                            <constraint firstAttribute="trailing" secondItem="IBd-7G-Ur4" secondAttribute="trailing" id="iCx-9n-w9X"/>
+                            <constraint firstItem="efY-Og-BpV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sZB-io-2in"/>
+                            <constraint firstItem="efY-Og-BpV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ugD-nD-ciK"/>
+                            <constraint firstAttribute="trailing" secondItem="efY-Og-BpV" secondAttribute="trailing" id="xYB-yJ-IO3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="IBd-7G-Ur4" id="nV7-Mv-nDp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="200" y="289"/>
         </scene>
     </scenes>
 </document>
